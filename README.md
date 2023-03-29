@@ -2,10 +2,10 @@
 
 The Lorenz attractor is a three-dimensional dynamical system that exhibits chaotic behavior. It was first described by Edward Lorenz in 1963 and is often used as a simplified model for atmospheric convection. The system is defined by a set of differential equations that describe the motion of a point in three-dimensional space. The equations are highly nonlinear and can produce complex and unpredictable behavior over time.
 
-This repository contains a simple visualization of the Lorenz attractor using p5.js, a JavaScript library for creative coding. The visualization is created using the WEBGL renderer, which allows for the creation of a 3-dimensional object that accurately represents the Lorenz attractor. The movement of a particle through the attractor is visualized with a trail that follows the particle's path through the system. The resulting animation provides a captivating and immersive representation of the Lorenz attractor and its chaotic behavior.
+This repository contains a simple visualization of the Lorenz attractor using p5.js, a JavaScript library for creative coding. The visualization is created using the WEBGL renderer, which allows for the creation of a 3-dimensional object that accurately represents the Lorenz attractor. The movement of particles through the attractor is visualized with trails that follow the particles' path through the system. The resulting animation provides a captivating and immersive representation of the Lorenz attractor and its chaotic behavior.
 
 ## Preview
-![2023-03-26 22_09_36-Window](https://user-images.githubusercontent.com/122832270/228112928-8fd0003b-b944-4093-b35f-b77e24680066.png)
+![2023-03-28 22_31_46-Window](https://user-images.githubusercontent.com/122832270/228438151-d1d4cf28-c72d-4b4c-892c-b5643d28e08f.png)
 
 ## Running the project locally
 To run this project locally, you will need to follow these steps:
