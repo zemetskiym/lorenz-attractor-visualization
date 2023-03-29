@@ -32,7 +32,6 @@ function draw() {
     beginShape()
     noFill()
     strokeWeight(1)
-    strokeCap('project')
     stroke('#F9DC5C')
     scale(6)
     for(let i = 0; i < trail.length; i++) {
