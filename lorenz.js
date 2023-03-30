@@ -37,6 +37,7 @@ function setup() {
   
 function draw() {
     background('#2C2A4A')
+    orbitControl()
     
     for(let i = 0; i < 5; i++) {
         addVertexToTrail(i)
