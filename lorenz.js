@@ -16,10 +16,10 @@ const rayleighNumber = 28
 const aspectRatio = 8/3
 const dt = 0.01
 
-// Define a trail object to hold arrays for each shape
-let trail = {}
+// Define a trail array to hold arrays for each shape
+let trail = []
 for(let i = 0; i < 5; i++) {
-    trail['trail' + i] = []
+    trail[i] = []
 }
 
 // Function that calculates and adds a new vertex to the trail of the specified shape
@@ -35,11 +35,11 @@ function addVertexToTrail (i) {
     lines[i].z += dz * dt
   
     // Add x, y, and z positions for the new vertex in the array
-    trail['trail' + i].push([lines[i].x, lines[i].y, lines[i].z])
+    trail[i].push([lines[i].x, lines[i].y, lines[i].z])
     
     // If the trail has more than 1000 positions, remove the oldest position
-    if(trail['trail' + i].length > 1000) {
-      trail['trail' + i].splice(0, 1)
+    if(trail[i].length > 1000) {
+      trail[i].splice(0, 1)
     }
 }
   
@@ -63,9 +63,9 @@ function draw() {
         noFill()
         strokeWeight(1)
         stroke(lines[i].stroke)
-        for(let j = 0; j < trail['trail' + i].length; j++) {
+        for(let j = 0; j < trail[i].length; j++) {
             // Get the x, y, and z position of the current vertex in the trail
-            let [xpos, ypos, zpos] = trail['trail' + i][j]
+            let [xpos, ypos, zpos] = trail[i][j]
             // Draw the vertex, scaled by a factor of 6 for visual purposes
             vertex(xpos * 6, ypos * 6, zpos * 6)
         }
