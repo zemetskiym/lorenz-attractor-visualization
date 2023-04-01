@@ -7,6 +7,14 @@ This repository contains a simple visualization of the Lorenz attractor using p5
 ## Preview
 ![2023-03-28 22_31_46-Window](https://user-images.githubusercontent.com/122832270/228438151-d1d4cf28-c72d-4b4c-892c-b5643d28e08f.png)
 
+## Interacting with the 3D Scene
+To interact with the 3D scene, use your mouse to rotate and pan the view:
+
+- Left mouse drag: rotate the view
+- Right mouse drag: pan the view
+
+By rotating and panning the view, you can explore the Lorenz attractor from different angles and gain a deeper understanding of its chaotic behavior.
+
 ## Running the project locally
 To run this project locally, you will need to follow these steps:
 
