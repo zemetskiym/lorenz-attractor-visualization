@@ -5,7 +5,7 @@ The Lorenz attractor is a three-dimensional dynamical system that exhibits chaot
 This repository contains a simple visualization of the Lorenz attractor using p5.js, a JavaScript library for creative coding. The visualization is created using the WEBGL renderer, which allows for the creation of a 3-dimensional object that accurately represents the Lorenz attractor. The movement of particles through the attractor is visualized with trails that follow the particles' path through the system. The resulting animation provides a captivating and immersive representation of the Lorenz attractor and its chaotic behavior.
 
 ## Preview
-![2023-03-28 22_31_46-Window](https://user-images.githubusercontent.com/122832270/228438151-d1d4cf28-c72d-4b4c-892c-b5643d28e08f.png)
+![2023-04-05 18_37_45-Window](https://user-images.githubusercontent.com/122832270/230251409-20394d88-57ce-4915-ae7b-b09693589095.png)
 
 ## Interacting with the 3D Scene
 To interact with the 3D scene, use your mouse to rotate and pan the view:
