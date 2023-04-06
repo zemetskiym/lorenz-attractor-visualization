@@ -35,19 +35,20 @@ function addVertexToTrail (i) {
     lines[i].z += dz * dt
   
     if (trail[i].length > 0) {
-      // Calculate the distance between the current point and the previous point in the trail
-      let prevPoint = trail[i][trail[i].length - 1]
-      let dist = sqrt(pow(lines[i].x - prevPoint[0], 2) + pow(lines[i].y - prevPoint[1], 2) + pow(lines[i].z - prevPoint[2], 2))
+        // Calculate the distance between the current point and the previous point in the trail
+        let prevPoint = trail[i][trail[i].length - 1]
+        let dist = sqrt(pow(lines[i].x - prevPoint[0], 2) + pow(lines[i].y - prevPoint[1], 2) + pow(lines[i].z - prevPoint[2], 2))
 
-      // Add the new vertex to the trail array if the distance is greater than 0.1 units
-      if(dist > 1) {
+        // Add the new vertex to the trail array if the distance is greater than 0.1 units
+        if(dist > 1) {
           trail[i].push([lines[i].x, lines[i].y, lines[i].z])
-      }
+        }
     } else {
-      trail[i].push([lines[i].x, lines[i].y, lines[i].z])
+        // If no vertices exist, add one
+        trail[i].push([lines[i].x, lines[i].y, lines[i].z])
     }
     
-    // If the trail has more than 300 positions, remove the oldest position
+    // If the trail has more than 500 positions, remove the oldest position
     if(trail[i].length > 500) {
       trail[i].splice(0, 1)
     }
@@ -76,7 +77,7 @@ function draw() {
         for(let j = 0; j < trail[i].length; j++) {
             // Get the x, y, and z position of the current vertex in the trail
             let [xpos, ypos, zpos] = trail[i][j]
-            // Draw the vertex, scaled by a factor of 7 for visual purposes
+            // Draw the curved vertex, scaled by a factor of 8.75 for visual purposes
             curveVertex(xpos * 8.75, ypos * 8.75, zpos * 8.75)
         }
         endShape()
